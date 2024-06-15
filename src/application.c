@@ -1,5 +1,6 @@
 ﻿#include "awtk.h"
-#include "common/navigator.h"
+#include "mvvm/mvvm.h"
+#include "./view_models/temperature_view_model.h"
 
 #ifndef APP_SYSTEM_BAR
 #define APP_SYSTEM_BAR ""
@@ -51,7 +52,7 @@ ret_t application_init(void) {
   if (strlen(APP_BOTTOM_SYSTEM_BAR) > 0) {
     navigator_to(APP_BOTTOM_SYSTEM_BAR);
   }
-
+  view_model_factory_register("temperature", temperature_view_model_create);
   return navigator_to(APP_START_PAGE);
 }
 

@@ -2,7 +2,7 @@
   "name": "awtk_mvvm_practice_review2",
   "entry": "home_page",
   "awtkRoot": "d:/Devtools/awtk",
-  "awtkMvvmRoot": "${AWTK_SDK_PATH}/awtk-mvvm",
+  "awtkMvvmRoot": "d:/Devtools/awtk-mvvm",
   "type": "PROJECT_WIDGETS_APPLICATION",
   "appTitle": "awtk_mvvm_practice_review2",
   "appExeName": "demo",
@@ -33,8 +33,8 @@
           }
         },
         "lcd": {
-          "width": "800",
-          "height": "480",
+          "width": "480",
+          "height": "320",
           "colorDepth": "16bit",
           "colorFormat": "BGR(A)"
         }

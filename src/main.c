@@ -1,4 +1,8 @@
 ﻿#include "awtk.h"
+#include "mvvm_app.inc"
+
+#define GLOBAL_INIT() mvvm_app_init()
+#define GLOBAL_EXIT() mvvm_app_deinit()
 
 BEGIN_C_DECLS
 #ifdef AWTK_WEB

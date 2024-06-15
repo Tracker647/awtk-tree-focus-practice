@@ -1,5 +1,5 @@
 ﻿#include "awtk.h"
-#include "../common/navigator.h"
+
 
 /**
  * 初始化窗口的子控件
