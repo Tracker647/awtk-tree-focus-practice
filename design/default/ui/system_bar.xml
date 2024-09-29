@@ -1,0 +1,7 @@
+<system_bar h="53" name="system_bar">
+  <label name="lbl_depth" x="17" y="10" w="94" h="33" style:normal:border_color="#1a2f4a00" style:normal:icon="a11" style:normal:text_color="#FFFFFF" style:normal:bg_color="#002B6B" style:normal:round_radius="5" style:normal:margin="5" style:normal:font_size="25" text="10.0m"/>
+  <label name="lbl_warmth" x="133" y="10" w="94" h="32" style:normal:border_color="#1a2f4a00" style:normal:icon="a9" style:normal:bg_color="#002B6B" style:normal:text_color="#FFFFFF" style:normal:margin="5" style:normal:round_radius="5" style:normal:font_size="25" text="30.0℃"/>
+  <image name="img_signal" x="249" y="10" w="38" h="33" draw_type="center" image="a2" style:normal:border_color="#1a2f4a00" style:normal:bg_color="#002B6B" style:normal:round_radius="5"/>
+  <image name="img_battery1" x="677" y="11" w="53" h="26" draw_type="scale" image="b2" scale_x="1.5" scale_y="1.5" anchor_x="0.5" anchor_y="0.5" style:normal:font_size="25" style:normal:margin_right="5" text="1.0"/>
+  <image name="img_battery2" x="737" y="11" w="53" h="26" draw_type="scale" image="b3" scale_x="1.5" scale_y="1.5" anchor_x="0.5" anchor_y="0.5" style:normal:font_size="25" style:normal:margin_right="5" text="1.0"/>
+</system_bar>

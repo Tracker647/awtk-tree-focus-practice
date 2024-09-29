@@ -1,0 +1,230 @@
+<?xml ruler_x="1370,-824"?>
+<window name="setting_menu" on:window_open="setting_menu_init()" style:normal:bg_color="#43536A" move_focus_up_key="up" move_focus_down_key="down" move_focus_left_key="left" move_focus_right_key="right">
+  <view name="v_menu_left" x="0" y="0" w="250" h="427" style:normal:bg_color="#1A2F4A" focusable="false">
+    <tab_button name="tbtn_basic" x="21" y="27" w="219" h="44" style="tab_button" focused="true" focusable="true" style:disable:bg_color="#525252" style:disable:text_color="#BFBFBF" style:focused_of_active:icon="actived_basic" with_focus_state="false" style:focused:border_color="#00FEFF" tr_text="Basic"/>
+    <tab_button name="tbtn_sonar" x="21" y="81" w="219" h="44" style="tab_button" style:normal:icon="sonar" style:pressed:icon="actived_sonar" style:over:icon="sonar" focusable="true" style:focused:icon="actived_sonar" style:normal_of_active:icon="actived_sonar" style:disable:icon="sonar" style:focused:text_color="#43CFCD" style:normal_of_active:text_color="#43CFCD" style:pressed_of_active:text_color="#43CFCD" style:over_of_active:text_color="#43CFCD" style:pressed_of_active:icon="actived_sonar" style:over_of_active:icon="actived_sonar" style:disable_of_active:icon="actived_sonar" style:focused_of_active:icon="actived_sonar" with_focus_state="false" style:focused:border_color="#00FFFF" tr_text="Sonar"/>
+    <tab_button name="tbtn_system" x="21" y="135" w="219" h="44" style="tab_button" style:normal:icon="system" style:pressed:icon="actived_system" style:over:icon="system" focusable="true" style:focused:icon="actived_system" style:over_of_active:icon="actived_system" style:pressed_of_active:icon="actived_system" style:normal_of_active:icon="actived_system" style:disable:icon="system" style:normal_of_active:text_color="#43CFCD" style:pressed_of_active:text_color="#43CFCD" style:over_of_active:text_color="#43CFCD" style:disable_of_active:icon="system" style:focused_of_active:icon="actived_system" with_focus_state="false" style:focused:border_color="#00FFFF" value="false" tr_text="System"/>
+    <button name="button1" x="29" y="195" w="100" h="36" style:focused:border_color="#00FFFF" focusable="true" text="to another window"/>
+  </view>
+  <pages name="v_menu_right" x="255" y="0" w="545" h="427" value="2147483647" style:normal:bg_color="#1A2F4A" style:normal:border_color="#00000000">
+    <scroll_view name="scroll_view_basic" x="0" y="20" w="545" h="390" style:normal:bg_color="#1A2F4A" yslidable="true" move_to_page="true">
+      <view name="v_setting_select_sensitvity" x="10" y="10" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="Auto;1;2;3;4;5;6;7;8;9" select_index="0" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" style:normal:font_name="default" tr_text="Sensitivity"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <view name="select_box" x="10" y="10" w="149" h="26">
+            <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="118" h="26" style:normal:font_size="25" style:disable:border_color="#34445D" style:disable:text_color="#FFFFFF" style:disable:font_size="25" style:focused:font_size="25" text="Label"/>
+            <button name="sbox_left_btn" focusable="true" x="0" y="5" w="9" h="16" style="tri_btn_left" tr_text="Button"/>
+            <button name="sbox_right_btn" focusable="true" x="140" y="5" w="9" h="16" style="tri_btn_right" tr_text="Button"/>
+          </view>
+          <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="true" focusable="true"/>
+        </view>
+      </view>
+      <view name="v_setting_select_surface_clarify" x="10" y="95" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="OFF;1;2;3;4;5;6;7;8;9;10" select_index="0" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Surface Clarify"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <view name="select_box" x="10" y="10" w="149" h="26">
+            <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="118" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+            <button name="sbox_left_btn" focusable="true" x="0" y="5" w="9" h="16" style="tri_btn_left" tr_text="Button"/>
+            <button name="sbox_right_btn" focusable="true" x="140" y="5" w="9" h="16" style="tri_btn_right" tr_text="Button"/>
+          </view>
+          <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="true" focusable="true"/>
+        </view>
+      </view>
+      <view name="v_setting_select_fish_id_sens" x="10" y="180" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="OFF;1;2;3;4;5;6;7;8;9" select_index="0" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Fish ID.Sens."/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <view name="select_box" x="10" y="10" w="149" h="26">
+            <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="118" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+            <button name="sbox_left_btn" focusable="true" x="0" y="5" w="9" h="16" style="tri_btn_left" tr_text="Button"/>
+            <button name="sbox_right_btn" focusable="true" x="140" y="5" w="9" h="16" style="tri_btn_right" tr_text="Button"/>
+          </view>
+          <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="true" focusable="true"/>
+        </view>
+      </view>
+      <view name="v_setting_radio_background" x="10" y="265" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="radio" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Background"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <radio_button name="radio_button1" x="330" y="10" w="135" h="27" style="radio_btn" focusable="true" style:normal:font_size="25" tr_text="Black"/>
+          <radio_button name="radio_button" x="170" y="10" w="128" h="26" style="radio_btn" focusable="true" value="true" tr_text="Blue"/>
+          <radio_button name="radio_button2" x="10" y="10" w="135" h="27" style="radio_btn" focusable="true" tr_text="White"/>
+        </view>
+      </view>
+      <view name="v_setting_select_color_adjust" x="10" y="350" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="1;2;3;4;5;6;7" select_index="0" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Color Adjust"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <view name="select_box" x="10" y="10" w="149" h="26">
+            <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="118" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+            <button name="sbox_left_btn" focusable="true" x="0" y="5" w="9" h="16" style="tri_btn_left" tr_text="Button"/>
+            <button name="sbox_right_btn" focusable="true" x="140" y="5" w="9" h="16" style="tri_btn_right" tr_text="Button"/>
+          </view>
+          <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="true" focusable="true"/>
+        </view>
+      </view>
+      <view name="v_setting_switch_night_mode" x="10" y="435" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="switch" focusable="true">
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <label name="lbl_setting_tag" x="10" y="10" w="100" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" tr_text="Night Mode"/>
+          <check_button name="check_button" x="453" y="10" w="48" h="24" style="switch_btn" focusable="true" style:normal:bg_image="switch_normal" value="true" tr_text="CheckButton"/>
+        </view>
+      </view>
+    </scroll_view>
+    <scroll_view name="scroll_view_sonar" x="0" y="20" w="545" h="390" style:normal:bg_color="#1A2F4A" yslidable="true">
+      <view name="v_setting_select_depth_range" x="10" y="10" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="Auto;1fa;2fa;3fa;4fa;5fa;6fa;7fa;8fa;9fa;10fa;11fa;12fa;13fa;14fa;15fa;16fa;17fa;18fa;19fa;20fa;21fa;22fa;23fa;24fa;25fa;26fa;27fa;28fa;29fa;30fa" select_index="0" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Depth Range"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <view name="select_box" x="10" y="10" w="149" h="26">
+            <button name="sbox_left_btn" focusable="true" x="0" y="5" w="9" h="16" style="tri_btn_left" tr_text="Button"/>
+            <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="118" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+            <button name="sbox_right_btn" focusable="true" x="140" y="5" w="9" h="16" style="tri_btn_right" tr_text="Button"/>
+          </view>
+          <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="true"/>
+        </view>
+      </view>
+      <view name="v_setting_radio_sonar_gain" x="10" y="95" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="radio" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Sonar Gain"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <radio_button name="radio_button0" x="10" y="9" w="106" h="27" style="radio_btn" focusable="true" tr_text="Auto"/>
+          <radio_button name="radio_button1" x="126" y="9" w="106" h="27" style="radio_btn" focusable="true" value="true" tr_text="x1"/>
+          <radio_button name="radio_button2" x="242" y="9" w="106" h="27" style="radio_btn" focusable="true" tr_text="x2"/>
+          <radio_button name="radio_button3" x="358" y="9" w="106" h="27" style="radio_btn" focusable="true" tr_text="x4"/>
+        </view>
+      </view>
+      <view name="v_setting_radio_sonar_mode" x="10" y="180" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="radio" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Sonar Mode"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <radio_button name="radio_button0" x="10" y="10" w="176" h="27" style="radio_btn" focusable="true" tr_text="Signal &amp; Fish ID"/>
+          <radio_button name="radio_button1" x="196" y="9" w="145" h="27" style="radio_btn" focusable="true" value="true" tr_text="Fish ID"/>
+          <radio_button name="radio_button2" x="351" y="10" w="145" h="27" style="radio_btn" focusable="true" tr_text="Signal "/>
+        </view>
+      </view>
+      <view name="v_setting_radio_freq_settings" x="10" y="265" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="radio" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Freq.Settings"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <radio_button name="radio_button0" x="10" y="10" w="135" h="27" style="radio_btn" focusable="true" tr_text="83K"/>
+          <radio_button name="radio_button1" x="170" y="10" w="128" h="26" style="radio_btn" focusable="true" value="true" tr_text="200K"/>
+          <radio_button name="radio_button2" x="330" y="10" w="135" h="27" style="radio_btn" focusable="true" style:normal:font_size="25" tr_text="DUAL"/>
+        </view>
+      </view>
+      <view name="v_setting_select_shallow_alarm" x="10" y="350" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="OFF;1m;2m;3m;4m;5m;6m;7m;8m;9m;10m" select_index="0" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Shallow Alarm"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <view name="select_box" x="10" y="10" w="149" h="26">
+            <button name="sbox_left_btn" focusable="true" x="0" y="5" w="9" h="16" style="tri_btn_left" tr_text="Button"/>
+            <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="118" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+            <button name="sbox_right_btn" focusable="true" x="140" y="5" w="9" h="16" style="tri_btn_right" tr_text="Button"/>
+          </view>
+          <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="true"/>
+        </view>
+      </view>
+      <view name="v_setting_switch_fish_alarm" x="10" y="435" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="switch" focusable="true">
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <label name="lbl_setting_tag" x="10" y="10" w="100" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" tr_text="Fish Alarm"/>
+          <check_button name="check_button" x="453" y="10" w="48" h="24" style="switch_btn" focusable="true" style:normal:bg_image="switch_normal" tr_text="CheckButton"/>
+        </view>
+      </view>
+    </scroll_view>
+    <scroll_view name="scroll_view_system" x="0" y="20" w="545" h="390" style:normal:bg_color="#1A2F4A" yslidable="true">
+      <view name="v_setting_select_battery_alarm" x="10" y="10" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="OFF;8.4;8.8;9.2;9.6;10.0;10.4;10.8;11.2;11.6;12.0;12.4;12.8;13.2;13.6;14.0;14.4;14.8;15.2;15.6;16.0" select_index="0" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Battery Alarm"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <view name="select_box" x="10" y="10" w="149" h="26">
+            <button name="sbox_left_btn" focusable="true" x="0" y="5" w="9" h="16" style="tri_btn_left" tr_text="Button"/>
+            <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="118" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+            <button name="sbox_right_btn" focusable="true" x="140" y="5" w="9" h="16" style="tri_btn_right" tr_text="Button"/>
+          </view>
+          <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="true" focusable="true"/>
+        </view>
+      </view>
+      <view name="v_setting_select_boat_vtg_alarm" x="10" y="95" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="OFF;8.4;8.8;9.2;9.6;10.0;10.4;10.8;11.2;11.6;12.0;12.4;12.8;13.2;13.6;14.0;14.4;14.8;15.2;15.6;16.0" select_index="0" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Boat Vtg.Alarm"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <view name="select_box" x="10" y="10" w="149" h="26">
+            <button name="sbox_left_btn" focusable="true" x="0" y="5" w="9" h="16" style="tri_btn_left" tr_text="Button"/>
+            <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="118" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+            <button name="sbox_right_btn" focusable="true" x="140" y="5" w="9" h="16" style="tri_btn_right" tr_text="Button"/>
+          </view>
+          <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="true" focusable="true"/>
+        </view>
+      </view>
+      <view name="v_setting_select_backlight" x="10" y="180" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="0;1;2;3;4;5;6;7;8;9" select_index="0" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Backlight"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <view name="select_box" x="10" y="10" w="149" h="26">
+            <button name="sbox_left_btn" focusable="true" x="0" y="5" w="9" h="16" style="tri_btn_left" tr_text="Button"/>
+            <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="118" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+            <button name="sbox_right_btn" focusable="true" x="140" y="5" w="9" h="16" style="tri_btn_right" tr_text="Button"/>
+          </view>
+          <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="true" focusable="true"/>
+        </view>
+      </view>
+      <view name="v_setting_radio_depth_unit" x="10" y="265" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="radio" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Depth unit"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <radio_button name="radio_button1" x="10" y="10" w="135" h="27" style="radio_btn" focusable="true" tr_text="feet"/>
+          <radio_button name="radio_button2" x="170" y="10" w="128" h="26" style="radio_btn" focusable="true" value="true" tr_text="fathom"/>
+          <radio_button name="radio_button3" x="330" y="10" w="135" h="27" style="radio_btn" focusable="true" style:normal:font_size="25"  tr_text="meter"/>
+        </view>
+      </view>
+      <view name="v_setting_radio_temperature_unit" x="10" y="350" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="radio" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Temperature unit"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <radio_button name="radio_button1" x="10" y="10" w="135" h="27" style="radio_btn" focusable="true" value="true" tr_text="℃"/>
+          <radio_button name="radio_button2" x="170" y="10" w="128" h="26" style="radio_btn" focusable="true" tr_text="℉"/>
+        </view>
+      </view>
+      <view name="v_setting_switch_simulator" x="10" y="435" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="switch" focusable="true">
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <label name="lbl_setting_tag" x="10" y="10" w="83" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" tr_text="Simulator"/>
+          <check_button name="check_button" x="453" y="10" w="48" h="24" style="switch_btn" focusable="true" style:normal:bg_image="switch_normal" tr_text="CheckButton"/>
+        </view>
+      </view>
+      <view name="v_setting_switch_key_tone" x="10" y="520" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="switch" focusable="true">
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <label name="lbl_setting_tag" x="10" y="10" w="84" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" tr_text="Key Tone"/>
+          <check_button name="check_button" x="453" y="10" w="48" h="24" style="switch_btn" focusable="true" style:normal:bg_image="switch_normal" tr_text="CheckButton"/>
+        </view>
+      </view>
+      <view name="v_setting_language" x="10" y="605" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="English;中文(简体)" focusable="true">
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <label name="lbl_setting_tag" x="10" y="10" w="84" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" style:normal:text_align_h="center" style:normal:margin_left="5" tr_text="Language"/>
+          <view name="select_box" x="262" y="10" w="258" h="26">
+            <button name="sbox_left_btn" focusable="true" x="-14" y="5" w="21" h="16" style="tri_btn_left" tr_text="Button"/>
+            <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="212" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+            <button name="sbox_right_btn" focusable="true" x="235" y="5" w="21" h="16" style="tri_btn_right" tr_text="Button"/>
+          </view>
+        </view>
+      </view>
+      <view name="v_setting_radio_connection" x="10" y="690" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="Auto;1;2;3;4;5;6;7;8;9" select_index="0" focusable="true">
+        <label name="lbl_setting_tag" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" tr_text="Radio connection"/>
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <label name="lbl_wifi_name" x="10" y="10" w="140" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" style:normal:icon="wifi_no_signal" tr_text="WIFI"/>
+          <label name="lbl_wifi_msg" x="329" y="10" w="155" h="28" style:normal:text_color="#FF0824" style:normal:font_size="23" style:normal:icon_at="right" tr_text="connecting timed out..."/>
+          <image name="img_wifi_msg_icon" x="494" y="16" w="16" h="16" draw_type="scale" image="timeout"/>
+        </view>
+      </view>
+      <view name="v_setting_dialog_system_info" x="10" y="775" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="dialog" focusable="true">
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <label name="lbl_setting_tag" x="10" y="10" w="189" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" style:normal:text_align_h="left" style:normal:margin_left="5" tr_text="System Info."/>
+          <button name="button" x="373" y="10" w="127" h="26" style:normal:bg_color="#3D4D65" style:normal:text_color="#FFFFFF" style:normal:border_color="#34445d00" style:pressed:bg_color="#4addd3c8" style:pressed:border_color="#34445d00" style:over:border_color="#34445d00" style:over:bg_color="#4ADDD5" style:focused:bg_color="#4ADDD5" style:focused:text_color="#FFFFFF" style:normal:font_size="25" style:pressed:font_size="25" style:over:font_size="25" style:disable:font_size="25" style:focused:font_size="25" with_focus_state="false" style:focused:border_color="#00000000" tr_text="View"/>
+        </view>
+      </view>
+      <view name="v_setting_dialog_radio_bind" x="10" y="860" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="dialog" focusable="true">
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <label name="lbl_setting_tag" x="10" y="10" w="189" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" style:normal:text_align_h="left" style:normal:margin_left="5" tr_text="Radio Bind"/>
+          <button name="button" x="373" y="10" w="127" h="26" style:normal:bg_color="#3D4D65" style:normal:text_color="#FFFFFF" style:normal:border_color="#34445d00" style:pressed:bg_color="#4addd3c8" style:pressed:border_color="#34445d00" style:over:border_color="#34445d00" style:over:bg_color="#4ADDD5" style:focused:bg_color="#4ADDD5" style:focused:text_color="#FFFFFF" style:normal:font_size="25" style:pressed:font_size="25" style:over:font_size="25" style:disable:font_size="25" style:focused:font_size="25" with_focus_state="false" style:focused:border_color="#00000000" tr_text="Binding"/>
+        </view>
+      </view>
+      <view name="v_setting_dialog_update_sonar_box" x="10" y="945" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="dialog" focusable="true">
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <label name="lbl_setting_tag" x="10" y="10" w="189" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" style:normal:text_align_h="left" style:normal:margin_left="5" tr_text="Update Sonar Box"/>
+          <button name="button" x="373" y="10" w="127" h="26" style:normal:bg_color="#3D4D65" style:normal:text_color="#FFFFFF" style:normal:border_color="#34445d00" style:pressed:bg_color="#4addd3c8" style:pressed:border_color="#34445d00" style:over:border_color="#34445d00" style:over:bg_color="#4ADDD5" style:focused:bg_color="#4ADDD5" style:focused:text_color="#FFFFFF" style:normal:font_size="25" style:pressed:font_size="25" style:over:font_size="25" style:disable:font_size="25" style:focused:font_size="25" with_focus_state="false" style:focused:border_color="#00000000" tr_text="Update"/>
+        </view>
+      </view>
+      <view name="v_setting_dialog_factory_reset" x="10" y="1030" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="dialog" focusable="true">
+        <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+          <label name="lbl_setting_tag" x="10" y="10" w="189" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" style:normal:text_align_h="left" style:normal:margin_left="5" tr_text="Factory reset"/>
+          <button name="button" x="373" y="10" w="127" h="26" style:normal:bg_color="#3D4D65" style:normal:text_color="#FFFFFF" style:normal:border_color="#34445d00" style:pressed:bg_color="#4addd3c8" style:pressed:border_color="#34445d00" style:over:border_color="#34445d00" style:over:bg_color="#4ADDD5" style:focused:bg_color="#4ADDD5" style:focused:text_color="#FFFFFF" style:normal:font_size="25" style:pressed:font_size="25" style:over:font_size="25" style:disable:font_size="25" style:focused:font_size="25" with_focus_state="false" style:focused:border_color="#00000000" tr_text="Clear"/>
+        </view>
+      </view>
+    </scroll_view>
+  </pages>
+</window>

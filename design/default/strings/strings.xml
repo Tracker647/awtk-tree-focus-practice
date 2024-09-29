@@ -1,0 +1,224 @@
+<string name="awtk">
+  <language name="zh_CN">这是awtk</language>
+  <language name="en_US">This is awtk</language>
+</string>
+<string name="Basic">
+  <language name="zh_CN">基本</language>
+  <language name="en_US">Basic</language>
+</string>
+<string name="Sonar">
+  <language name="zh_CN">声纳</language>
+  <language name="en_US">Sonar</language>
+</string>
+<string name="System">
+  <language name="zh_CN">系统</language>
+  <language name="en_US">System</language>
+</string>
+<string name="Label">
+  <language name="zh_CN">标签</language>
+  <language name="en_US">Label</language>
+</string>
+<string name="Sensitivity">
+  <language name="zh_CN">灵敏度</language>
+  <language name="en_US">Sensitivity</language>
+</string>
+<string name="Button">
+  <language name="zh_CN">按钮</language>
+  <language name="en_US">Button</language>
+</string>
+<string name="Surface Clarify">
+  <language name="zh_CN">表面清晰度</language>
+  <language name="en_US">Surface Clarify</language>
+</string>
+<string name="Fish ID.Sens.">
+  <language name="zh_CN">鱼类ID灵敏度</language>
+  <language name="en_US">Fish ID.Sens.</language>
+</string>
+<string name="Background">
+  <language name="zh_CN">背景</language>
+  <language name="en_US">Background</language>
+</string>
+<string name="Black">
+  <language name="zh_CN">黑色</language>
+  <language name="en_US">Black</language>
+</string>
+<string name="Blue">
+  <language name="zh_CN">蓝色</language>
+  <language name="en_US">Blue</language>
+</string>
+<string name="White">
+  <language name="zh_CN">白色</language>
+  <language name="en_US">White</language>
+</string>
+<string name="Color Adjust">
+  <language name="zh_CN">色彩调节</language>
+  <language name="en_US">Color Adjust</language>
+</string>
+<string name="Night Mode">
+  <language name="zh_CN">夜间模式</language>
+  <language name="en_US">Night Mode</language>
+</string>
+<string name="Depth Range">
+  <language name="zh_CN">深度范围</language>
+  <language name="en_US">Depth Range</language>
+</string>
+<string name="Sonar Gain">
+  <language name="zh_CN">声纳增益</language>
+  <language name="en_US">Sonar Gain</language>
+</string>
+<string name="Auto">
+  <language name="zh_CN">自动</language>
+  <language name="en_US">Auto</language>
+</string>
+<string name="x1">
+  <language name="zh_CN">x1</language>
+  <language name="en_US">x1</language>
+</string>
+<string name="x2">
+  <language name="zh_CN">x2</language>
+  <language name="en_US">x2</language>
+</string>
+<string name="x4">
+  <language name="zh_CN">x4</language>
+  <language name="en_US">x4</language>
+</string>
+<string name="Sonar Mode">
+  <language name="zh_CN">声纳模式</language>
+  <language name="en_US">Sonar Mode</language>
+</string>
+<string name="Signal Fish ID">
+  <language name="zh_CN">信号与鱼类ID</language>
+  <language name="en_US">Signal Fish ID</language>
+</string>
+<string name="Fish ID">
+  <language name="zh_CN">鱼类ID</language>
+  <language name="en_US">Fish ID</language>
+</string>
+<string name="Signal">
+  <language name="zh_CN">信号</language>
+  <language name="en_US">Signal</language>
+</string>
+<string name="Freq.Settings">
+  <language name="zh_CN">频率设置</language>
+  <language name="en_US">Freq.Settings</language>
+</string>
+<string name="83K">
+  <language name="zh_CN">83K</language>
+  <language name="en_US">83K</language>
+</string>
+<string name="200K">
+  <language name="zh_CN">200K</language>
+  <language name="en_US">200K</language>
+</string>
+<string name="DUAL">
+  <language name="zh_CN">双频</language>
+  <language name="en_US">DUAL</language>
+</string>
+<string name="Shallow Alarm">
+  <language name="zh_CN">浅水警报</language>
+  <language name="en_US">Shallow Alarm</language>
+</string>
+<string name="Fish Alarm">
+  <language name="zh_CN">鱼类警报</language>
+  <language name="en_US">Fish Alarm</language>
+</string>
+<string name="Battery Alarm">
+  <language name="zh_CN">电池警报</language>
+  <language name="en_US">Battery Alarm</language>
+</string>
+<string name="Boat Vtg.Alarm">
+  <language name="zh_CN">船只速度警报</language>
+  <language name="en_US">Boat Vtg.Alarm</language>
+</string>
+<string name="Backlight">
+  <language name="zh_CN">背光</language>
+  <language name="en_US">Backlight</language>
+</string>
+<string name="Depth unit">
+  <language name="zh_CN">深度单位</language>
+  <language name="en_US">Depth unit</language>
+</string>
+<string name="meter">
+  <language name="zh_CN">米</language>
+  <language name="en_US">Meter</language>
+</string>
+<string name="fathom">
+  <language name="zh_CN">英寻</language>
+  <language name="en_US">Fathom</language>
+</string>
+<string name="feet">
+  <language name="zh_CN">英尺</language>
+  <language name="en_US">Feet</language>
+</string>
+<string name="Temperature unit">
+  <language name="zh_CN">温度单位</language>
+  <language name="en_US">Temperature unit</language>
+</string>
+<string name="℉">
+  <language name="zh_CN">华氏度</language>
+  <language name="en_US">Fahrenheit</language>
+</string>
+<string name="℃">
+  <language name="zh_CN">摄氏度</language>
+  <language name="en_US">Celsius</language>
+</string>
+<string name="Simulator">
+  <language name="zh_CN">模拟器</language>
+  <language name="en_US">Simulator</language>
+</string>
+<string name="CheckButton">
+  <language name="zh_CN">复选按钮</language>
+  <language name="en_US">CheckButton</language>
+</string>
+<string name="Key Tone">
+  <language name="zh_CN">按键音</language>
+  <language name="en_US">Key Tone</language>
+</string>
+<string name="Language">
+  <language name="zh_CN">语言</language>
+  <language name="en_US">Language</language>
+</string>
+<string name="Radio connection">
+  <language name="zh_CN">无线连接</language>
+  <language name="en_US">Radio connection</language>
+</string>
+<string name="WIFI">
+  <language name="zh_CN">WIFI</language>
+  <language name="en_US">WIFI</language>
+</string>
+<string name="connecting timed out...">
+  <language name="zh_CN">连接超时...</language>
+  <language name="en_US">connecting timed out...</language>
+</string>
+<string name="System Info.">
+  <language name="zh_CN">系统信息。</language>
+  <language name="en_US">System Info.</language>
+</string>
+<string name="View">
+  <language name="zh_CN">查看</language>
+  <language name="en_US">View</language>
+</string>
+<string name="Radio Bind">
+  <language name="zh_CN">无线电绑定</language>
+  <language name="en_US">Radio Bind</language>
+</string>
+<string name="Binding">
+  <language name="zh_CN">正在绑定</language>
+  <language name="en_US">Binding</language>
+</string>
+<string name="Update Sonar Box">
+  <language name="zh_CN">更新声纳盒</language>
+  <language name="en_US">Update Sonar Box</language>
+</string>
+<string name="Update">
+  <language name="zh_CN">更新</language>
+  <language name="en_US">Update</language>
+</string>
+<string name="Factory reset">
+  <language name="zh_CN">恢复出厂设置</language>
+  <language name="en_US">Factory reset</language>
+</string>
+<string name="Clear">
+  <language name="zh_CN">清除</language>
+  <language name="en_US">Clear</language>
+</string>

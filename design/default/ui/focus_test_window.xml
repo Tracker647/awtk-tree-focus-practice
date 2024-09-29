@@ -1,0 +1,43 @@
+<window name="focus_test_window" style:normal:bg_color="#1A2F4A" move_focus_up_key="up" move_focus_down_key="down" move_focus_left_key="left" move_focus_right_key="right">
+  <view name="v_setting_switch" x="18" y="214" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="switch" focusable="true">
+    <view name="setting_container2" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+      <label name="label3" x="10" y="10" w="61" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+      <check_button name="check_button" x="453" y="10" w="48" h="24" style="switch_btn" focusable="true" style:normal:bg_image="switch_normal" text="CheckButton"/>
+    </view>
+  </view>
+  <view name="v_setting_language" x="18" y="299" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" focusable="true">
+    <view name="setting_container3" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+      <label name="label8" x="10" y="10" w="189" h="28" style:normal:text_color="#FFFFFF" style:normal:font_size="25" style:normal:text_align_h="left" style:normal:margin_left="5" text="Language"/>
+      <view name="select_box" x="262" y="10" w="258" h="26">
+        <button name="sbox_left_btn" focusable="true" x="-14" y="5" w="21" h="16" style="tri_btn_left" text="Button"/>
+        <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="212" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+        <button name="sbox_right_btn" focusable="true" x="235" y="5" w="21" h="16" style="tri_btn_right" text="Button"/>
+      </view>
+    </view>
+  </view>
+  <view name="select_box2" x="641" y="78" w="149" h="26" focusable="true" style:focused:border_color="#00FFFF">
+    <button name="button4" x="0" y="5" w="9" h="16" style="tri_btn_left" focusable="true" text="Button"/>
+    <label name="label7" x="15" y="0" w="118" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" focusable="true" style:focused:font_size="25" style:focused:text_color="#FFFFFF" style:focused:border_color="#00FFFF" text="Label"/>
+    <button name="button5" x="140" y="5" w="9" h="16" style="tri_btn_right" focusable="true" text="Button"/>
+  </view>
+  <view name="v_setting_radio_background" x="18" y="129" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="radio" focusable="true">
+    <label name="label3" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" text="Background"/>
+    <view name="setting_container3" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+      <radio_button name="radio_button1" x="330" y="10" w="135" h="27" style="radio_btn" focusable="true" style:normal:font_size="25" style:normal:bg_image="" text="Black"/>
+      <radio_button name="radio_button" x="170" y="10" w="128" h="26" style="radio_btn" focusable="true" value="true" text="Blue"/>
+      <radio_button name="radio_button2" x="10" y="10" w="135" h="27" style="radio_btn" focusable="true" text="White"/>
+    </view>
+  </view>
+  <view name="v_setting_select_sensitvity" x="18" y="44" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="select" val_list="Auto;1;2;3;4;5;6;7;8;9" select_index="0" focusable="true">
+    <label name="label" x="0" y="0" w="160" h="28" style:normal:text_color="#FFFFFF" style:normal:text_align_h="left" style:normal:font_size="25" style:normal:margin_left="2" text="Sensitivity"/>
+    <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
+      <view name="select_box" x="10" y="10" w="149" h="26">
+        <button name="sbox_left_btn" focusable="true" x="0" y="5" w="9" h="16" style="tri_btn_left" text="Button"/>
+        <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="15" y="0" w="118" h="26" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
+        <button name="sbox_right_btn" focusable="true" x="140" y="5" w="9" h="16" style="tri_btn_right" text="Button"/>
+      </view>
+      <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="false" focusable="true"/>
+    </view>
+  </view>
+  <button name="button1" x="643" y="212" w="100" h="36" style:focused:border_color="#00FFFF" focusable="true" text="back setting menu"/>
+</window>

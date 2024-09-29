@@ -1,6 +1,10 @@
 ﻿#include "awtk.h"
 #include "mvvm/mvvm.h"
+#include "mvvm_app.inc"
+#include "setting_menu.h"
 #include "./view_models/temperature_view_model.h"
+#include "tkc/fscript.h"
+#include "common/func_widget_tree_focus_manager.h"
 
 #ifndef APP_SYSTEM_BAR
 #define APP_SYSTEM_BAR ""
@@ -11,7 +15,7 @@
 #endif /*APP_BOTTOM_SYSTEM_BAR*/
 
 #ifndef APP_START_PAGE
-#define APP_START_PAGE "home_page"
+#define APP_START_PAGE "setting_menu"
 #endif /*APP_START_PAGE*/
 
 /**
@@ -42,9 +46,9 @@ static ret_t application_on_exit(void) {
  * 初始化程序
  */
 ret_t application_init(void) {
+  mvvm_app_init();
   custom_widgets_register();
   application_on_launch();
-
   if (strlen(APP_SYSTEM_BAR) > 0) {
     navigator_to(APP_SYSTEM_BAR);
   }
@@ -52,7 +56,9 @@ ret_t application_init(void) {
   if (strlen(APP_BOTTOM_SYSTEM_BAR) > 0) {
     navigator_to(APP_BOTTOM_SYSTEM_BAR);
   }
-  view_model_factory_register("temperature", temperature_view_model_create);
+
+  fscript_register_func("widget_tree_focus_init", func_widget_tree_focus_init);
+  fscript_register_func("setting_menu_init", func_setting_menu_init);
   return navigator_to(APP_START_PAGE);
 }
 
@@ -62,6 +68,6 @@ ret_t application_init(void) {
 ret_t application_exit(void) {
   application_on_exit();
   log_debug("application_exit\n");
-
+   mvvm_app_deinit();
   return RET_OK;
 }
