@@ -1,12 +1,15 @@
 ﻿#include "awtk.h"
 #include "navigator.h"
+extern ret_t focus_test_window_init(widget_t* win, void* ctx);
 
 #ifndef WITH_MVVM
 
 extern ret_t home_page_init(widget_t* win, void* ctx);
 
 static ret_t navigator_window_init(const char* name, widget_t* win, void* ctx) {
-  if (tk_str_eq(name, "home_page")) {
+    if (tk_str_eq(name, "focus_test_window")) {
+      return focus_test_window_init(win, ctx);
+    } else if (tk_str_eq(name, "home_page")) {
     return home_page_init(win, ctx);
   }
 

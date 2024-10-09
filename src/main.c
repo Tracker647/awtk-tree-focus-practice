@@ -18,6 +18,6 @@ extern ret_t application_exit(void);
 
 #define APP_LCD_ORIENTATION LCD_ORIENTATION_0
 #define APP_TYPE APP_SIMULATOR
-#define APP_NAME "menucase_mvvm"
+#define APP_NAME "awtk-tree-focus-practice"
 
 #include "awtk_main.inc"

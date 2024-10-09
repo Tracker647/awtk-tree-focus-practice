@@ -1,10 +1,10 @@
 {
-  "name": "menucase_mvvm",
+  "name": "awtk-tree-focus-practice",
   "entry": "home_page",
   "awtkRoot": "d:/AWStudioProjects/awtk",
   "awtkMvvmRoot": "d:/Devtools/awtk-mvvm",
   "type": "PROJECT_WIDGETS_APPLICATION",
-  "appTitle": "menucase_mvvm",
+  "appTitle": "awtk-tree-focus-practice",
   "appExeName": "demo",
   "appType": "APP_SIMULATOR",
   "dependencies": {

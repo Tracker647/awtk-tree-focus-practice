@@ -39,5 +39,5 @@
       <slider name="slider" x="180" y="15" w="312" h="16" style:normal:icon="rounded_n" vertical="false" dragger_adapt_to_icon="true" slide_with_bar="false" style:normal:fg_color="#0082D5" style:normal:round_radius="5" style:normal:x_offset="0" style:normal:fg_image_draw_type="default" sensitive="false" focusable="true"/>
     </view>
   </view>
-  <button name="button1" x="643" y="212" w="100" h="36" style:focused:border_color="#00FFFF" focusable="true" text="back setting menu"/>
+  <button name="button1" x="643" y="212" w="100" h="36" style:focused:border_color="#00FFFF" focusable="true" v-on:click="{navigate, Args=string?request=_back_}" text="back setting menu"/>
 </window>
