@@ -1,7 +1,7 @@
 {
   "name": "awtk-tree-focus-practice",
   "entry": "home_page",
-  "awtkRoot": "d:/AWStudioProjects/awtk",
+  "awtkRoot": "/home/zhangdalin/AWStudioProjects/awtk",
   "awtkMvvmRoot": "d:/Devtools/awtk-mvvm",
   "type": "PROJECT_WIDGETS_APPLICATION",
   "appTitle": "awtk-tree-focus-practice",

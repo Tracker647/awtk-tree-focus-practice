@@ -4,8 +4,6 @@
 #include "base/widget.h"
 #include "tkc/fscript.h"
 
-
-BEGIN_C_DECLS
 typedef enum {
     kNoChildrenFocusable = 0,
     kNoParentsFocusable = 1
@@ -144,5 +142,5 @@ ret_t widget_tree_focus_init(widget_t *win);
  * @return ret_t 
  */
 ret_t func_widget_tree_focus_init(fscript_t* fscript, fscript_args_t* args, value_t* result);
-END_C_DECLS
+
 #endif  /* WIDGET_TREE_FOCUS_MANAGER_H */

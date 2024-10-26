@@ -1,4 +1,4 @@
-#include "func_widget_tree_focus_manager.h"
+#include "widget_tree_focus_manager.h"
 #include "base/window_base.h"
 #include "base/widget.h"
 #include "tkc/mem.h"
@@ -72,6 +72,7 @@ static ret_t on_no_focusable_parent_default(void *ctx, event_t *e)
     return RET_OK;
 }
 
+
 ret_t widget_tree_focus_set_cb(widget_t *win, enWidgetTreeFocusEvent treefocusEvent, widget_tree_focus_cb_t cb, void *ctx, event_t *e)
 {   	
 	widget_tree_focus_manager_t *manager = widget_get_prop_pointer(win, "window_tree_focus_manager");
@@ -97,6 +98,7 @@ widget_tree_focus_manager_t* widget_tree_focus_manager_create(widget_t *win){
     return_value_if_fail(win != NULL, NULL);
     widget_tree_focus_manager_t *manager = TKMEM_ZALLOC(widget_tree_focus_manager_t);
     manager->win = win;
+    widget_set_prop_pointer(win, "window_tree_focus_manager", manager);
     widget_tree_focus_set_cb(win, kNoChildrenFocusable, on_no_focusable_children_default, NULL, NULL);
     widget_tree_focus_set_cb(win, kNoParentsFocusable, on_no_focusable_parent_default, NULL, NULL);
     manager->g_focus_widget_list_stack = darray_create(10, NULL, NULL);
@@ -208,7 +210,6 @@ ret_t widget_tree_focus_init(widget_t *win){
         printf("window_tree_focus_manager created\r\n");
         tree_focus_manager = widget_tree_focus_manager_create(win);
         return_value_if_fail(tree_focus_manager != NULL, RET_OOM);
-        widget_set_prop_pointer(win, "window_tree_focus_manager", tree_focus_manager);
         widget_on(win, EVT_KEY_DOWN, widget_tree_focus_manager_on_key_down, tree_focus_manager);    
         widget_on(win, EVT_DESTROY, widget_tree_focus_manager_on_destroy, tree_focus_manager);  
     }
@@ -222,15 +223,7 @@ ret_t func_widget_tree_focus_init(fscript_t* fscript, fscript_args_t* args, valu
     widget_t *win = widget_get_window(widget);
     printf("func_widget_tree_focus_init\r\n");
     if (args->size == 0) {
-        widget_tree_focus_manager_t* tree_focus_manager = widget_get_prop_pointer(win, "window_tree_focus_manager");
-        if(NULL == tree_focus_manager){
-            printf("window_tree_focus_manager created\r\n");
-            tree_focus_manager = widget_tree_focus_manager_create(win);
-            return_value_if_fail(tree_focus_manager != NULL, RET_OOM);
-            widget_set_prop_pointer(win, "window_tree_focus_manager", tree_focus_manager);
-            widget_on(win, EVT_KEY_DOWN, widget_tree_focus_manager_on_key_down, tree_focus_manager);    
-            widget_on(win, EVT_DESTROY, widget_tree_focus_manager_on_destroy, tree_focus_manager);  
-        }
+        widget_tree_focus_init(win);
     }
     FSCRIPT_FUNC_CHECK(win != NULL, RET_BAD_PARAMS);
     return RET_OK;

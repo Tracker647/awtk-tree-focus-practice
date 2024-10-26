@@ -4,7 +4,7 @@
 #include "setting_menu.h"
 #include "./view_models/temperature_view_model.h"
 #include "tkc/fscript.h"
-#include "common/func_widget_tree_focus_manager.h"
+#include "widget_tree_focus_manager.h"
 
 #ifndef APP_SYSTEM_BAR
 #define APP_SYSTEM_BAR ""

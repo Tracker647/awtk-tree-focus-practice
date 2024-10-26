@@ -5,6 +5,7 @@
     <tab_button name="tbtn_sonar" x="21" y="81" w="219" h="44" style="tab_button" style:normal:icon="sonar" style:pressed:icon="actived_sonar" style:over:icon="sonar" focusable="true" style:focused:icon="actived_sonar" style:normal_of_active:icon="actived_sonar" style:disable:icon="sonar" style:focused:text_color="#43CFCD" style:normal_of_active:text_color="#43CFCD" style:pressed_of_active:text_color="#43CFCD" style:over_of_active:text_color="#43CFCD" style:pressed_of_active:icon="actived_sonar" style:over_of_active:icon="actived_sonar" style:disable_of_active:icon="actived_sonar" style:focused_of_active:icon="actived_sonar" with_focus_state="false" style:focused:border_color="#00FFFF" tr_text="Sonar"/>
     <tab_button name="tbtn_system" x="21" y="135" w="219" h="44" style="tab_button" style:normal:icon="system" style:pressed:icon="actived_system" style:over:icon="system" focusable="true" style:focused:icon="actived_system" style:over_of_active:icon="actived_system" style:pressed_of_active:icon="actived_system" style:normal_of_active:icon="actived_system" style:disable:icon="system" style:normal_of_active:text_color="#43CFCD" style:pressed_of_active:text_color="#43CFCD" style:over_of_active:text_color="#43CFCD" style:disable_of_active:icon="system" style:focused_of_active:icon="actived_system" with_focus_state="false" style:focused:border_color="#00FFFF" value="false" tr_text="System"/>
     <button name="button1" x="29" y="195" w="100" h="36" style:focused:border_color="#00FFFF" v-on:click="{navigate, args=focus_test_window}" focusable="true" text="to another window"/>
+    <label name="sbox_label" style="sbox_label_onwa" focusable="true" x="29" y="282" w="200" h="46" style:normal:border_color="#34445D" style:normal:text_color="#FFFFFF" style:normal:font_size="25" text="Label"/>
   </view>
   <pages name="v_menu_right" x="255" y="0" w="545" h="427" value="2147483647" style:normal:bg_color="#1A2F4A" style:normal:border_color="#00000000">
     <scroll_view name="scroll_view_basic" x="0" y="20" w="545" h="390" style:normal:bg_color="#1A2F4A" yslidable="true" move_to_page="true">
@@ -161,7 +162,7 @@
         <view name="setting_container" x="0" y="28" w="530" h="46" style:normal:bg_color="#15263E" style:normal:round_radius="5" style:focused:border_color="#4ADDD5" style:focused:round_radius="5">
           <radio_button name="radio_button1" x="10" y="10" w="135" h="27" style="radio_btn" focusable="true" tr_text="feet"/>
           <radio_button name="radio_button2" x="170" y="10" w="128" h="26" style="radio_btn" focusable="true" value="true" tr_text="fathom"/>
-          <radio_button name="radio_button3" x="330" y="10" w="135" h="27" style="radio_btn" focusable="true" style:normal:font_size="25"  tr_text="meter"/>
+          <radio_button name="radio_button3" x="330" y="10" w="135" h="27" style="radio_btn" focusable="true" style:normal:font_size="25" tr_text="meter"/>
         </view>
       </view>
       <view name="v_setting_radio_temperature_unit" x="10" y="350" w="530" h="75" style:normal:border_color="#00000000" style:focused:border_color="#3FC5C3" widget_type="radio" focusable="true">

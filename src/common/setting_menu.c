@@ -1,6 +1,7 @@
-﻿#include "awtk.h"
+﻿
+#include "awtk.h"
 #include "../common/navigator.h"
-#include "common/func_widget_tree_focus_manager.h"
+#include "widget_tree_focus_manager.h"
 #include <stdbool.h>
 
 
